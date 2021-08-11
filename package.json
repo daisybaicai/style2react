@@ -1,57 +1,63 @@
 {
-	"name": "style2react",
-	"displayName": "style2react",
-	"description": "",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.50.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:style2react.styleToReact"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "style2react.styleToReact",
-				"title": "styleToReact(转化行内样式)"
-			}
-		],
-		"menus": {
-			"editor/context": [
-				{
-					"when": "resourceLangId =~ /vue|html|react|typescript|javascript/",
-					"command": "style2react.styleToReact",
-					"alt": "style2react.styleToReact",
-					"group": "navigation"
-				}
-			]
-		},
-		"keybindings": [
-			{
-				"command": "style2react.styleToReact",
-				"key": "ctrl+h",
-				"mac": "cmd+h"
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.59.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.2.2",
-		"@types/node": "14.x",
-		"eslint": "^7.27.0",
-		"glob": "^7.1.7",
-		"mocha": "^8.4.0",
-		"typescript": "^4.3.2",
-		"vscode-test": "^1.5.2"
-	}
+  "name": "style2react",
+  "displayName": "style2react",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "daisiyao",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:style2react.styleToReact"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "style2react.styleToReact",
+        "title": "styleToReact(转化行内样式)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceLangId =~ /vue|html|react|typescript|javascript/",
+          "command": "style2react.styleToReact",
+          "alt": "style2react.styleToReact",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "style2react.styleToReact",
+        "key": "ctrl+h",
+        "mac": "cmd+h"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.59.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daisybaicai/vscode-style-transform.git"
+  },
+  "homepage": "https://github.com/daisybaicai/vscode-style-transform/blob/main/README.md"
 }
